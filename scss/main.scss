@@ -1,0 +1,22 @@
+$primary-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+body {
+    background: $primary-color
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    &__paragraph {
+        font-weight: map-get($map: $font-weights, $key: bold);
+        &:hover {
+            color: $text-color;
+        }
+    }
+}
