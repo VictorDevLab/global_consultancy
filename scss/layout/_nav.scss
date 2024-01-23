@@ -1,0 +1,29 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+nav {
+    background-color: var.$tertiary-color;
+.navbar {
+        @include mixins.flexCenter();
+        max-width: var.$max_width;
+        margin: 0 auto;
+        padding: 10px;
+        .links {
+            a:first-child {
+                color: var.$primary-color;
+                margin-right: 25px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: var.$text-color;
+                font-family: var.$primary-font;
+                font-weight: func.weight(bold);
+                &:hover {
+                    color: var.$primary-color;
+                }
+            }
+        }
+    }
+}

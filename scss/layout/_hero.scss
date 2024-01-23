@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins';
+@use '../abstracts/functions' as func;
+@use '../components/buttons';
+
+.hero {
+    .hero__section {
+      @include mixins.flexContainer();
+      .circle {
+        height: 70px;
+        width: 70px;
+        background-color: var.$primary-color;
+        border-radius: 50%;
+      }
+      h1 {
+        font-family: var.$primary-font;
+        font-size: 5.625rem;
+        font-weight: func.weight(bold);
+      }
+      p {
+        font-family: var.$secondary-font;
+        font-size: var.$font-size;
+        font-weight: func.weight(regular);
+      }
+    }
+
+}
