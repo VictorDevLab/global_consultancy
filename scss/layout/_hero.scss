@@ -1,27 +1,59 @@
-@use '../abstracts/variables' as var;
+@use '../abstracts/variables'as var;
 @use '../abstracts/mixins';
-@use '../abstracts/functions' as func;
+@use '../abstracts/functions'as func;
 @use '../components/buttons';
 
+
 .hero {
+    background-color: #eceaea;
+
     .hero__section {
-      @include mixins.flexContainer();
-      .circle {
-        height: 70px;
-        width: 70px;
-        background-color: var.$primary-color;
-        border-radius: 50%;
-      }
-      h1 {
-        font-family: var.$primary-font;
-        font-size: 5.625rem;
-        font-weight: func.weight(bold);
-      }
-      p {
-        font-family: var.$secondary-font;
-        font-size: var.$font-size;
-        font-weight: func.weight(regular);
-      }
+        @include mixins.flexContainer();
+        max-width: var.$max_width;
+        margin: 0 auto;
+        min-height: 691px;
+        .hero__left {
+            padding: 30px 40px;
+            .circle {
+                height: 70px;
+                width: 70px;
+                background-color: var.$primary-color;
+                border-radius: 50%;
+                margin-top: 26px;
+            }
+
+            h1 {
+                font-family: var.$primary-font;
+                font-size: 5.625rem;
+                font-weight: func.weight(bold);
+                margin-top: 23px;
+            }
+
+            p {
+                font-family: var.$secondary-font;
+                font-size: var.$font-size;
+                font-weight: func.weight(regular);
+                margin-top: 23px;
+                line-height: 29px;
+            }
+            a {
+                margin-top: 35px;
+                display: block;
+                color: var.$text-color;
+                font-weight: func.weight(regular);
+                font-family: var.$primary-font;
+                font-style: italic;
+            }
+            button {
+                margin-top: 45px;
+            }
+        }
+        .hero__right {
+            img {
+                width: 160%;
+                height: 100%;
+            }
+        }
     }
 
 }

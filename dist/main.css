@@ -1,11 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 nav {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 nav .navbar {
   display: flex;
@@ -14,7 +8,7 @@ nav .navbar {
   flex-direction: row;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 15px;
 }
 nav .navbar .links a:first-child {
   color: #f2795a;
@@ -34,34 +28,125 @@ nav .navbar .links a:hover {
 button {
   letter-spacing: 1px;
   font-size: 1.125rem;
-  border: #000000 solid;
   color: #ffffff;
   align-self: center;
   text-transform: uppercase;
   background-color: #000000;
   font-weight: 400;
+  border: none;
   margin: 45px auto 0 0;
   border-radius: 50px;
   padding: 19px 63px 19px 62px;
+  transition: background-color 0.1s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f2795a;
 }
 
+.hero {
+  background-color: #eceaea;
+}
 .hero .hero__section {
   display: flex;
   justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+  min-height: 691px;
 }
-.hero .hero__section .circle {
+.hero .hero__section .hero__left {
+  padding: 30px 40px;
+}
+.hero .hero__section .hero__left .circle {
   height: 70px;
   width: 70px;
   background-color: #f2795a;
   border-radius: 50%;
+  margin-top: 26px;
 }
-.hero .hero__section h1 {
+.hero .hero__section .hero__left h1 {
   font-family: "Roboto", sans-serif;
   font-size: 5.625rem;
   font-weight: 700;
+  margin-top: 23px;
 }
-.hero .hero__section p {
+.hero .hero__section .hero__left p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  margin-top: 23px;
+  line-height: 29px;
+}
+.hero .hero__section .hero__left a {
+  margin-top: 35px;
+  display: block;
+  color: #1a1a1a;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+.hero .hero__section .hero__left button {
+  margin-top: 45px;
+}
+.hero .hero__section .hero__right img {
+  width: 160%;
+  height: 100%;
+}
+
+.services__container .services .right__services .cards .card1, .services__container .services .right__services .cards .card2, .services__container .services .right__services .cards .card3 {
+  display: flex;
+  padding: 30px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  width: 280px;
+  font-family: "Open Sans", sans-serif;
+  height: 160px;
+  display: flex;
+}
+.services__container .services .right__services .cards .card1 i, .services__container .services .right__services .cards .card2 i, .services__container .services .right__services .cards .card3 i {
+  font-size: 50px;
+  color: #ffffff;
+}
+.services__container .services .right__services .cards .card1 div, .services__container .services .right__services .cards .card2 div, .services__container .services .right__services .cards .card3 div {
+  padding-left: 18px;
+}
+.services__container .services .right__services .cards .card1 div h5, .services__container .services .right__services .cards .card2 div h5, .services__container .services .right__services .cards .card3 div h5 {
+  font-size: 20px;
+  margin-top: 0;
+}
+.services__container .services .right__services .cards .card1 div p, .services__container .services .right__services .cards .card2 div p, .services__container .services .right__services .cards .card3 div p {
+  margin-top: -20px;
+}
+
+.services__container .services {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.services__container .services .left__services {
+  text-align: center;
+}
+.services__container .services .left__services h2 {
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+}
+.services__container .services .left__services p {
+  font-family: "Open Sans", sans-serif;
+}
+.services__container .services .right__services .cards {
+  display: flex;
+  color: #ffffff;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.services__container .services .right__services .cards .card1 {
+  background-color: #53627f;
+}
+.services__container .services .right__services .cards .card2 {
+  background-color: #bbae9d;
+}
+.services__container .services .right__services .cards .card3 {
+  background-color: #f2795a;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as var;
+%card {
+    display: flex;
+    padding: 30px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 280px;
+    font-family: var.$secondary-font;
+    height: 160px;
+    display: flex;
+    
+    i {
+        font-size: 50px;
+        color: var.$secondary-color;
+    }
+    div {
+        padding-left: 18px;
+        h5 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+        p {
+            margin-top: -20px;
+        }
+       
+        
+    }
+}

@@ -1,0 +1,45 @@
+@use '../components/card';
+@use '../abstracts/variables'as var;
+
+.services__container {
+    .services {
+        max-width: var.$max_width;
+        margin: 0 auto;
+        .left__services {
+            text-align: center;
+
+            h2 {
+                margin-top: 60px;
+                font-family: var.$primary-font;
+                font-size: 48px;
+            }
+
+            p {
+                font-family: var.$secondary-font;
+            }
+        }
+
+        .right__services {
+            .cards {
+                display: flex;
+                color: var.$secondary-color;
+                gap: 25px;
+                flex-wrap: wrap;
+                margin: 50px auto;
+                .card1 {
+                    @extend %card;
+                    background-color: #53627f;
+                }
+                .card2 {
+                    @extend %card;
+                    background-color: #bbae9d;
+                }
+                .card3 {
+                    @extend %card;
+                    background-color: #f2795a;
+                }
+            }
+        }
+    }
+
+}
