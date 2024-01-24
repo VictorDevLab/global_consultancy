@@ -1,3 +1,4 @@
+/* Styles for screens between 768px and 1023px wide (tablets) */
 nav {
   background-color: #ffffff;
 }
@@ -70,11 +71,17 @@ button:hover {
   font-weight: 700;
   margin-top: 23px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero .hero__section .hero__left h1 {
+    font-size: 3.625rem;
+  }
+}
 .hero .hero__section .hero__left p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 23px;
+  margin-top: 13px;
+  margin-bottom: 13px;
   line-height: 29px;
 }
 .hero .hero__section .hero__left a {
@@ -91,6 +98,28 @@ button:hover {
 .hero .hero__section .hero__right img {
   width: 160%;
   height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero .hero__section .hero__right img {
+    min-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero__section {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .hero__section .hero__left h1 {
+    font-size: 48px;
+  }
+  .hero .hero__section .hero__right img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero .hero__section {
+    height: 500px;
+  }
 }
 
 .services__container .services .right__services .cards .card1, .services__container .services .right__services .cards .card2, .services__container .services .right__services .cards .card3 {
@@ -119,6 +148,40 @@ button:hover {
   margin-top: -20px;
 }
 
+.info__card {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  width: 310px;
+  height: 190px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.info__card:last-child {
+  margin-bottom: 40px;
+}
+.info__card:first-child {
+  margin-top: 40px;
+}
+.info__card h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  margin: 0;
+}
+.info__card p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .info__card {
+    width: 280px;
+    height: 190px;
+  }
+  .info__card p {
+    line-height: 1.6;
+  }
+}
+
 .services__container .services {
   max-width: 1024px;
   margin: 0 auto;
@@ -133,6 +196,11 @@ button:hover {
 }
 .services__container .services .left__services p {
   font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 768px) {
+  .services__container .services .left__services h2 {
+    font-size: 2.25rem;
+  }
 }
 .services__container .services .right__services .cards {
   display: flex;
@@ -149,4 +217,39 @@ button:hover {
 }
 .services__container .services .right__services .cards .card3 {
   background-color: #f2795a;
+}
+@media (max-width: 768px) {
+  .services__container .services .right__services .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.info {
+  background-image: url("/assets/background_two.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .info {
+    background-position: 90% 70%;
+  }
+}
+
+.info__cards {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .info__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */

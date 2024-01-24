@@ -9,3 +9,20 @@
     display: flex;
     justify-content: space-between;
 }
+
+@mixin mobile() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin flexMobile() {
+    display: flex;
+    flex-direction: column;
+}
+ /* Styles for screens between 768px and 1023px wide (tablets) */
+@mixin flexTablet() {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+      }
+      
+}

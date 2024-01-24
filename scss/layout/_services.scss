@@ -1,10 +1,12 @@
 @use '../components/card';
 @use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
 
 .services__container {
     .services {
         max-width: var.$max_width;
         margin: 0 auto;
+
         .left__services {
             text-align: center;
 
@@ -17,6 +19,12 @@
             p {
                 font-family: var.$secondary-font;
             }
+
+            @include mixins.mobile {
+                h2 {
+                    font-size: 2.25rem;
+                }
+            }
         }
 
         .right__services {
@@ -26,17 +34,28 @@
                 gap: 25px;
                 flex-wrap: wrap;
                 margin: 50px auto;
+
                 .card1 {
                     @extend %card;
                     background-color: #53627f;
                 }
+
                 .card2 {
                     @extend %card;
                     background-color: #bbae9d;
                 }
+
                 .card3 {
                     @extend %card;
                     background-color: #f2795a;
+                }
+            }
+
+            @include mixins.mobile {
+                .cards {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
         }

@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins';
+.info {
+    background-image: url('/assets/background_two.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mixins.mobile {
+        background-position: 90% 70%;
+    }
+}
+.info__cards {
+    max-width: var.$max-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0 auto;
+
+    @include mixins.mobile {
+        @include mixins.flexMobile();
+        align-items: center;
+    }
+}

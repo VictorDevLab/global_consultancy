@@ -1,4 +1,6 @@
-@use '../abstracts/variables' as var;
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
+
 %card {
     display: flex;
     padding: 30px 20px;
@@ -9,21 +11,63 @@
     font-family: var.$secondary-font;
     height: 160px;
     display: flex;
-    
+
     i {
         font-size: 50px;
         color: var.$secondary-color;
     }
+
     div {
         padding-left: 18px;
+
         h5 {
             font-size: 20px;
             margin-top: 0;
         }
+
         p {
             margin-top: -20px;
         }
-       
-        
+
+
     }
+}
+
+.info__card {
+    padding: 20px 30px;
+    background-color: var.$secondary-color;
+    width: 310px;
+    height: 190px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    &:last-child {
+        margin-bottom: 40px;
+    }
+
+    &:first-child {
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-family: var.$primary-font;
+        font-size: 35px;
+        margin: 0;
+    }
+
+    p {
+        font-family: var.$secondary-font;
+        line-height: 1.8;
+        margin-top: 0;
+    }
+
+    @include mixins.mobile {
+        width: 280px;
+        height: 190px;
+        p {
+            line-height: 1.6;
+        }
+    }
+
+
 }
