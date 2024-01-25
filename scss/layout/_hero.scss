@@ -6,6 +6,8 @@
 
 .hero {
     background-color: #eceaea;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     .hero__section {
         @include mixins.flexContainer();
@@ -62,16 +64,17 @@
             img {
                 width: 160%;
                 height: 100%;
+                object-fit: cover;
 
                 @include mixins.flexTablet {
-                    min-width: 100%; 
+                    min-width: 100%;
                 }
             }
         }
 
         @include mixins.mobile {
             @include mixins.flexMobile();
-            
+
             .hero__left {
                 h1 {
                     font-size: 48px;
@@ -85,10 +88,11 @@
                 }
             }
         }
+
         @include mixins.flexTablet {
-            height: 500px; 
+            height: 500px;
         }
-       
+
     }
 
 }
