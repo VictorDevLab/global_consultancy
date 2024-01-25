@@ -1,0 +1,88 @@
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
+
+.about__parent {
+    margin-top: 60px;
+
+    .u-image {
+        display: flex;
+        justify-content: flex-start;
+
+        img {
+            width: 927px;
+            height: 243px;
+            object-fit: cover;
+
+            @include mixins.mobile {
+                width: 340px;
+                height: 98px;
+            }
+        }
+    }
+
+    .abouts {
+        max-width: var.$max-width;
+        display: flex;
+        margin: 10px auto;
+
+        .about {
+            &.about1 {
+                padding: 30px 30px 30px 0;
+
+                @include mixins.mobile {
+                    padding: 30px;
+                }
+            }
+
+            &.about2 {
+                padding: 100px 30px 14px;
+
+                @include mixins.mobile {
+                    padding: 30px;
+                }
+            }
+
+            &.about3 {
+                padding: 100px 0 14px 30px;
+
+                @include mixins.mobile {
+                    padding: 30px;
+                }
+            }
+
+            h3 {
+                font-family: var.$primary-font;
+                font-size: 30px;
+            }
+
+            p {
+                font-family: var.$secondary-font;
+                line-height: 1.8;
+                font-size: 16px;
+            }
+        }
+
+        @include mixins.mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+    .v-image {
+        display: flex;
+        margin-top: 50px;
+        justify-content: flex-end;
+
+        img {
+            width: 927px;
+            height: 243px;
+            object-fit: cover;
+
+            @include mixins.mobile {
+                width: 340px;
+                height: 98px;
+            }
+        }
+    }
+}

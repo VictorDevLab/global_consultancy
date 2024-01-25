@@ -28,6 +28,7 @@
         }
 
         .right__services {
+           
             .cards {
                 display: flex;
                 color: var.$secondary-color;
@@ -52,6 +53,7 @@
             }
 
             @include mixins.mobile {
+                // padding-left: 20px;
                 .cards {
                     display: flex;
                     flex-direction: column;

@@ -45,6 +45,27 @@ button:hover {
   background-color: #f2795a;
 }
 
+.learn_more {
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  color: #1a1a1a;
+  align-self: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: 400;
+  margin: 15px auto 0 0;
+  border-radius: 50px;
+  padding: 15px 30px 15px 30px;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border: 2px #bbae9d solid;
+}
+.learn_more:hover {
+  background-color: #f2795a;
+  color: #ffffff;
+  border-color: #f2795a;
+}
+
 .hero {
   background-color: #eceaea;
 }
@@ -227,7 +248,7 @@ button:hover {
 }
 
 .info {
-  background-image: url("/assets/background_two.jpeg");
+  background-image: url("../assets/background_two.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,6 +265,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  padding: 20px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -251,5 +273,161 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.progress__container .progress .blocks .block .box1, .progress__container .progress .blocks .block .box2, .progress__container .progress .blocks .block .box3, .progress__container .progress .blocks .block .box4 {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.progress__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress__container .progress {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+.progress__container .progress h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 70px;
+}
+.progress__container .progress .blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.progress__container .progress .blocks .block {
+  display: flex;
+  width: 400px;
+  padding: 30px 0;
+}
+.progress__container .progress .blocks .block .box1 {
+  width: 50%;
+  background-color: #53627f;
+}
+.progress__container .progress .blocks .block .box2 {
+  width: 50%;
+  background-color: #ccd3db;
+}
+.progress__container .progress .blocks .block .box3 {
+  width: 50%;
+  background-color: #f2795a;
+}
+.progress__container .progress .blocks .block .box4 {
+  width: 50%;
+  background-color: #bbae9d;
+}
+.progress__container .progress .blocks .block p {
+  font-family: "Open Sans", sans-serif;
+  margin-top: -4px;
+  line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .progress__container .progress .blocks .block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 13% !important;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .parent__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about__parent {
+  margin-top: 60px;
+}
+.about__parent .u-image {
+  display: flex;
+  justify-content: flex-start;
+}
+.about__parent .u-image img {
+  width: 927px;
+  height: 243px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .about__parent .u-image img {
+    width: 340px;
+    height: 98px;
+  }
+}
+.about__parent .abouts {
+  max-width: 1024px;
+  display: flex;
+  margin: 10px auto;
+}
+.about__parent .abouts .about.about1 {
+  padding: 30px 30px 30px 0;
+}
+@media (max-width: 768px) {
+  .about__parent .abouts .about.about1 {
+    padding: 30px;
+  }
+}
+.about__parent .abouts .about.about2 {
+  padding: 100px 30px 14px;
+}
+@media (max-width: 768px) {
+  .about__parent .abouts .about.about2 {
+    padding: 30px;
+  }
+}
+.about__parent .abouts .about.about3 {
+  padding: 100px 0 14px 30px;
+}
+@media (max-width: 768px) {
+  .about__parent .abouts .about.about3 {
+    padding: 30px;
+  }
+}
+.about__parent .abouts .about h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+.about__parent .abouts .about p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .about__parent .abouts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.about__parent .v-image {
+  display: flex;
+  margin-top: 50px;
+  justify-content: flex-end;
+}
+.about__parent .v-image img {
+  width: 927px;
+  height: 243px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .about__parent .v-image img {
+    width: 340px;
+    height: 98px;
   }
 }/*# sourceMappingURL=main.css.map */

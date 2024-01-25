@@ -1,0 +1,91 @@
+@use '../abstracts/variables'as var;
+@use '../components/box';
+@use '../abstracts/mixins';
+
+.progress__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .progress {
+        max-width: var.$max-width;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-family: var.$primary-font;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .blocks {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .block {
+                display: flex;
+                width: 400px;
+                padding: 30px 0;
+
+                .box1 {
+                    @extend %box;
+                    width: 50%;
+                    background-color: #53627f;
+                   
+                }
+
+                .box2 {
+                    @extend %box;
+                    width: 50%;
+                    background-color: #ccd3db;
+                }
+
+                .box3 {
+                    @extend %box;
+                    width: 50%;
+                    background-color: var.$primary-color;
+                }
+
+                .box4 {
+                    @extend %box;
+                    width: 50%;
+                    background-color: #bbae9d;
+                }
+
+                p {
+                    font-family: var.$secondary-font;
+                    margin-top: -4px;
+                    line-height: 1.8;
+                    // @include mixins.mobile {
+                    //     width: 90%;
+                    // }
+                }
+
+                @include mixins.mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    // padding-left: 30px;
+                }
+            }
+
+        }
+
+    }
+
+}
+@include mixins.mobile{
+   .box {
+    width: 13% !important;
+    margin-bottom: 30px;
+   }                     
+}
+.parent__blocks {
+    @include mixins.mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
