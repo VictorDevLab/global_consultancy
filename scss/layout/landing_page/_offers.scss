@@ -9,9 +9,10 @@
         font: 48px var.$primary-font;
         font-weight: 700;
         margin-top: 60px;
+
         @include mixins.mobile {
-            font-size: 36px; 
-            }
+            font-size: 36px;
+        }
     }
 
     .offers__container {
@@ -26,9 +27,9 @@
             text-align: center
         }
 
-        @extend %innovation;
-
         .card1 {
+
+            @extend %innovation;
             margin-top: 200px;
 
             @include mixins.mobile {
@@ -36,9 +37,15 @@
             }
         }
 
-        .card2 {}
+        .card2 {
+
+            @extend %innovation;
+        }
 
         .card3 {
+
+            @extend %innovation;
+
             @include mixins.mobile {
                 margin-top: 20px;
             }
