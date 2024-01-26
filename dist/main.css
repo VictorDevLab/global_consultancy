@@ -848,20 +848,20 @@ button:hover {
   font-family: "Open Sans", sans-serif;
 }
 
-.offers .offers__container {
+.offers .offers__container .card1, .offers .offers__container .card2, .offers .offers__container .card3 {
   padding: 30px 22px;
 }
-.offers .offers__container .icons__container {
+.offers .offers__container .card1 .icons__container, .offers .offers__container .card2 .icons__container, .offers .offers__container .card3 .icons__container {
   display: flex;
   justify-content: start;
   align-items: center;
 }
 @media (max-width: 768px) {
-  .offers .offers__container .icons__container {
+  .offers .offers__container .card1 .icons__container, .offers .offers__container .card2 .icons__container, .offers .offers__container .card3 .icons__container {
     flex-direction: column;
   }
 }
-.offers .offers__container .icons__container div {
+.offers .offers__container .card1 .icons__container div, .offers .offers__container .card2 .icons__container div, .offers .offers__container .card3 .icons__container div {
   width: 64px;
   height: 64px;
   display: flex;
@@ -870,22 +870,22 @@ button:hover {
   border-radius: 50%;
   background-color: #f2795a;
 }
-.offers .offers__container .icons__container div img {
+.offers .offers__container .card1 .icons__container div img, .offers .offers__container .card2 .icons__container div img, .offers .offers__container .card3 .icons__container div img {
   width: 30px;
   height: 30px;
 }
-.offers .offers__container .icons__container h4 {
+.offers .offers__container .card1 .icons__container h4, .offers .offers__container .card2 .icons__container h4, .offers .offers__container .card3 .icons__container h4 {
   margin-left: 18px;
   font: 24px "Roboto", sans-serif;
   font-weight: 300;
 }
 @media (max-width: 768px) {
-  .offers .offers__container .icons__container h4 {
+  .offers .offers__container .card1 .icons__container h4, .offers .offers__container .card2 .icons__container h4, .offers .offers__container .card3 .icons__container h4 {
     margin-top: 10px;
     margin-left: 0;
   }
 }
-.offers .offers__container .innovation__content {
+.offers .offers__container .card1 .innovation__content, .offers .offers__container .card2 .innovation__content, .offers .offers__container .card3 .innovation__content {
   font: 16px "Open Sans", sans-serif;
   line-height: 1.8;
 }
