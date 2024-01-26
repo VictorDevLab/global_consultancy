@@ -737,8 +737,8 @@ button:hover {
 }
 @media (max-width: 768px) {
   .testimonial .testimonial__container .testimonial__card {
-    width: 340px;
-    padding: 20px 10px;
+    width: 330px;
+    padding: 10px 10px;
   }
 }
 .testimonial .testimonial__container .testimonial__card .image__container {
@@ -752,6 +752,7 @@ button:hover {
 .testimonial .testimonial__container .testimonial__card blockquote {
   font: 24px "Open Sans", sans-serif;
   font-weight: 300;
+  text-align: center;
   padding-left: 20px;
 }
 .testimonial .testimonial__container .testimonial__card h6 {
@@ -766,7 +767,7 @@ button:hover {
 .testimonial__card1 {
   margin-bottom: 150px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1158px) {
   .testimonial__card1 {
     margin-bottom: 20px;
   }
@@ -775,68 +776,74 @@ button:hover {
 .testimonial__card2 {
   margin-top: 150px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1158px) {
   .testimonial__card2 {
     margin-top: 20px;
   }
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: #bbae9d;
+.contact {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
 }
-footer div {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 1024px;
-  width: 83%;
-}
-footer div h2 {
-  font: 36px "Roboto", sans-serif;
+.contact h2 {
+  font: 36px "Open Sans", sans-serif;
+  margin-bottom: 40px;
   font-weight: 700;
-  text-align: center;
+  color: #1a1a1a; /* Adjust the color as needed */
+  text-align: center; /* Center the heading */
+  text-transform: uppercase; /* Convert text to uppercase */
 }
-footer div form {
-  display: flex;
-  flex-direction: column;
-}
-footer div form div {
+.contact .form-container {
+  max-width: 600px;
   margin: 20px auto;
+}
+.contact .form-container form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
-  footer div form div {
+  .contact .form-container form {
     flex-direction: column;
   }
 }
-footer div form div input {
-  padding: 10px 12px;
+.contact .form-container form input {
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 10px;
   font-size: 1.125rem;
-  width: 45%;
-  border: none;
-  outline: none;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  footer div form div input {
-    width: 94%;
+  .contact .form-container form input {
+    width: 100%;
     margin-top: 30px;
   }
 }
-footer div form textarea {
-  margin-top: 27px;
-  border: none;
-  padding: 10px;
-  outline: none;
-  font-size: 1.125rem;
-  font-weight: 100;
-  width: 81%;
-  margin: 20px auto;
-}
-footer div form div button {
-  margin-top: 2px;
+.contact .form-container form textarea {
   width: 100%;
-  margin-bottom: 40px;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+.contact .form-container form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.contact .form-container form button :hover {
+  background-color: #f2795a;
+}
+
+.site__footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=main.css.map */

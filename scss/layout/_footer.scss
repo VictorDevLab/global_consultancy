@@ -1,68 +1,8 @@
-@use '../abstracts/variables'as var;
-@use '../abstracts/mixins';
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #bbae9d;
-   
-
-    div {
-        margin-top: 40px;
-        margin-bottom: 30px;
-        width: 100%;
-        h2 {
-            font: 36px var.$primary-font;
-            font-weight: 700;
-            text-align: center;
-            
-        }
-
-        max-width: var.$max-width;
-        width: 83%;
-
-        form {
-            display: flex;
-            flex-direction: column;
-
-            div {
-                margin: 20px auto;
-                display: flex;
-                justify-content: space-between;
-                @include mixins.mobile {
-                    flex-direction: column;
-                }
-                input {
-                    padding: 10px 12px;
-                    font-size: 1.125rem;
-                    width: 45%;
-                    border: none;
-                    outline: none;
-                    @include mixins.mobile {
-                        width: 94%;
-                        margin-top: 30px;
-                    }
-                }
-            }
-
-            textarea {
-                margin-top: 27px;
-                border: none;
-                padding: 10px;
-                outline: none;
-                font-size: 1.125rem;
-                font-weight: 100;
-                width: 81%;
-                margin: 20px auto;
-            }
-
-            div {
-                button {
-                    margin-top: 2px;
-                    width: 100%;
-                    margin-bottom: 40px;
-                }
-            }
-        }
-    }
-}
+@use '../abstracts/variables' as var;
+.site__footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: var.$secondary-font;;
+  }

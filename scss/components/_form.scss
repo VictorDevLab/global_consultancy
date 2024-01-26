@@ -1,0 +1,62 @@
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+  
+    h2 {
+      font: 36px var.$secondary-font;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: var.$text-color; /* Adjust the color as needed */
+      text-align: center; /* Center the heading */
+      text-transform: uppercase; /* Convert text to uppercase */
+    }
+  
+    .form-container {
+      max-width: 600px;
+      margin: 20px auto;
+  
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include mixins.mobile {
+            flex-direction: column;
+        }
+        input {
+          width: 48%;
+          padding: 10px;
+          margin-bottom: 10px;
+          font-size: 1.125rem;
+          box-sizing: border-box;
+          @include mixins.mobile {
+            width: 100%;
+            margin-top: 30px;
+        }
+        }
+  
+        textarea {
+          width: 100%;
+          padding: 20px;
+          margin-bottom: 10px;
+          margin-top: 30px;
+          box-sizing: border-box;
+        }
+  
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: var.$text-color;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          :hover {
+            background-color: var.$primary-color;
+          }
+        }
+      }
+    }
+  }
+  
