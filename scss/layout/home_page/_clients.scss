@@ -1,5 +1,5 @@
-@use '../abstracts/variables'as var;
-@use '../abstracts/mixins';
+@use '../../abstracts/variables'as var;
+@use '../../abstracts/mixins';
 .clients {
     display: flex;
     justify-content: center;

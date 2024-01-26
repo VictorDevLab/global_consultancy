@@ -1,4 +1,5 @@
-@use 'layout' as *;
+@use './layout/home_page/' as *;
+@use './layout/landing_page/' as *;
 
 //functions should be used to compute and return values
 

@@ -1,6 +1,6 @@
-@use '../abstracts/mixins';
-@use '../abstracts/variables' as var;
-@use '../abstracts/functions' as func;
+@use '../../abstracts/mixins';
+@use '../../abstracts/variables' as var;
+@use '../../abstracts/functions' as func;
 
 nav {
     background-color: var.$secondary-color;

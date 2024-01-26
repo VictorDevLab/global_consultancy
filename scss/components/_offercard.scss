@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins';
+
+%innovation {
+    padding: 30px 22px;
+
+    .icons__container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        @include mixins.mobile {
+        flex-direction: column; 
+        }
+
+        div {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: var.$primary-color;
+           
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        h4 {
+            margin-left: 18px;
+            font: 24px var.$primary-font;
+            font-weight: 300;
+            @include mixins.mobile {
+                margin-top: 10px; 
+                margin-left: 0;
+                }
+        }
+    }
+
+    .innovation__content {
+        font: 16px var.$secondary-font;
+        line-height: 1.8;
+    }
+
+}

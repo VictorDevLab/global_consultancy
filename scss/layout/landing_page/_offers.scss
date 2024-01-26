@@ -1,0 +1,50 @@
+@use '../../abstracts/variables'as var;
+@use '../../components/offercard';
+@use '../../abstracts/mixins';
+
+.offers {
+
+    h2 {
+        text-align: center;
+        font: 48px var.$primary-font;
+        font-weight: 700;
+        margin-top: 60px;
+        @include mixins.mobile {
+            font-size: 36px; 
+            }
+    }
+
+    .offers__container {
+        max-width: var.$max-width;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 30px;
+
+        @include mixins.mobile {
+            flex-direction: column;
+            text-align: center
+        }
+
+        @extend %innovation;
+
+        .card1 {
+            margin-top: 200px;
+
+            @include mixins.mobile {
+                margin-top: 20px;
+            }
+        }
+
+        .card2 {}
+
+        .card3 {
+            @include mixins.mobile {
+                margin-top: 20px;
+            }
+
+            margin-top: 230px;
+        }
+
+    }
+}

@@ -1,6 +1,6 @@
-@use '../abstracts/variables'as var;
-@use '../components/box';
-@use '../abstracts/mixins';
+@use '../../abstracts/variables'as var;
+@use '../../components/box';
+@use '../../abstracts/mixins';
 
 .progress__container {
     display: flex;

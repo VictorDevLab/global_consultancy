@@ -1,30 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
-</head>
-<body>
-    <div>
-        <h1>Coming Soon!</h1>
-        <h2>(Under Development)</h2>
-        <a href="./index.html">Return to Home page</a>
-    </div>
-    
-    <style>
-        h1 {
-            font-size: 48px;
-            font-family: 'Roboto', sans-serif;
-            color: #f2795a;
-        }
-        h2 {
-            font-size: 28px;
-            font-family: 'Roboto', sans-serif;
-        }
-        a {
-            font-size: 20px;
-        }
-    </style>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/16fa1b5c64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./dist/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/default-logo.png" alt="logo_image" />
+        </div>
+        <!-- <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+          </div> -->
+        <div class="links">
+          <a href="/">Home page</a>
+          <a href="./landing.html">Landing</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------------- hero section ------------------->
+    <section class="hero">
+      <div class="hero__section">
+        <div class="hero__left">
+          <div class="circle"></div>
+          <h1>Strategy Consulting</h1>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+          <a href="/">Image by Freepik</a>
+          <button>read more</button>
+        </div>
+        <div class="hero__right">
+          <img src="./assets/global1.jpeg" alt="Image of a man smiling" />
+        </div>
+      </div>
+    </section>
+
+    <!------------ services offered ------------->
+    <section class="offers">
+        <h2>What Services Do We Offer?</h2>
+      <div class="offers__container">
+        <div class="innovation card1">
+          <div class="icons__container">
+            <div>
+              <img src="./assets/arrow.png" alt="arrow icon image" />
+            </div>
+
+            <h4>Impact</h4>
+          </div>
+          <div class="innovation__content">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </div>
+        </div>
+        <div class="innovation card2">
+          <div class="icons__container">
+            <div>
+              <img src="./assets/briefcase.png" alt="briefcase icon image" />
+            </div>
+
+            <h4>Differentiation</h4>
+          </div>
+          <div class="innovation__content">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </div>
+        </div>
+        <div class="innovation card3">
+          <div class="icons__container">
+            <div>
+              <img src="./assets/bulb.png" alt="bulb image icon" />
+            </div>
+
+            <h4>Innovation</h4>
+          </div>
+          <div class="innovation__content">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
