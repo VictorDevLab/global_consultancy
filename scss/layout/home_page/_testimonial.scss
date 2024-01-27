@@ -1,6 +1,9 @@
 @use '../../abstracts/variables'as var;
 @use '../../abstracts/mixins';
 
+* {
+    box-sizing: border-box;
+}
 .testimonial {
     background-color: var.$primary-color;
     display: flex;
@@ -13,15 +16,17 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+        
 
         @include mixins.mobile {
             flex-direction: column;
         }
 
         .testimonial__card {
-            width: 389px;
-            padding: 30px;
-            border-radius: 30px;
+            width: 369px;
+            padding: 16px;
+            border-radius: 10px;
+            box-sizing: border-box;
             background-color: var.$secondary-color;
             display: flex;
             flex-direction: column;
@@ -46,17 +51,21 @@
                 font: 24px var.$secondary-font;
                 font-weight: 300;
                 text-align: center;
-                padding-left: 20px;
+                padding: 10px 0;
+                margin: 10px 0;
+                // padding-left: 20px;
             }
 
             h6 {
                 font: 20px var.$primary-font;
                 margin: 0;
+                
             }
 
             h5 {
                 font: 16px var.$primary-font;
                 color: var.$primary-color;
+                margin-top: 10px;
             }
         }
 

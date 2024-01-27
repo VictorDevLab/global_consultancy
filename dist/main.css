@@ -708,6 +708,10 @@ button:hover {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .testimonial {
   background-color: #f2795a;
   display: flex;
@@ -727,9 +731,10 @@ button:hover {
   }
 }
 .testimonial .testimonial__container .testimonial__card {
-  width: 389px;
-  padding: 30px;
-  border-radius: 30px;
+  width: 369px;
+  padding: 16px;
+  border-radius: 10px;
+  box-sizing: border-box;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -753,7 +758,8 @@ button:hover {
   font: 24px "Open Sans", sans-serif;
   font-weight: 300;
   text-align: center;
-  padding-left: 20px;
+  padding: 10px 0;
+  margin: 10px 0;
 }
 .testimonial .testimonial__container .testimonial__card h6 {
   font: 20px "Roboto", sans-serif;
@@ -762,6 +768,7 @@ button:hover {
 .testimonial .testimonial__container .testimonial__card h5 {
   font: 16px "Roboto", sans-serif;
   color: #f2795a;
+  margin-top: 10px;
 }
 
 .testimonial__card1 {
