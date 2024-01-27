@@ -1,9 +1,7 @@
 @use '../../abstracts/variables'as var;
 @use '../../abstracts/mixins';
 
-* {
-    box-sizing: border-box;
-}
+
 .testimonial {
     background-color: var.$primary-color;
     display: flex;
@@ -20,6 +18,7 @@
 
         @include mixins.mobile {
             flex-direction: column;
+            gap: 1px;
         }
 
         .testimonial__card {
@@ -77,7 +76,7 @@
     margin-bottom: 150px;
 
     @media (max-width: 1158px) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
 }
@@ -88,6 +87,6 @@
     margin-top: 150px;
 
     @media (max-width: 1158px) {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }

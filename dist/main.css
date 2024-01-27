@@ -708,10 +708,6 @@ button:hover {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .testimonial {
   background-color: #f2795a;
   display: flex;
@@ -728,6 +724,7 @@ button:hover {
 @media (max-width: 768px) {
   .testimonial .testimonial__container {
     flex-direction: column;
+    gap: 1px;
   }
 }
 .testimonial .testimonial__container .testimonial__card {
@@ -776,7 +773,7 @@ button:hover {
 }
 @media (max-width: 1158px) {
   .testimonial__card1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -785,7 +782,7 @@ button:hover {
 }
 @media (max-width: 1158px) {
   .testimonial__card2 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
