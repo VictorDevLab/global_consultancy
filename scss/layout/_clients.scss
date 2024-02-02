@@ -1,16 +1,20 @@
-@use '../../abstracts/variables'as var;
-@use '../../abstracts/mixins';
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
+
 .clients {
     display: flex;
     justify-content: center;
+
     .clients__container {
         padding: 50px auto;
+
         h2 {
             font: 48px var.$primary-font;
             font-weight: 700;
             text-align: center;
             margin-top: 60px;
-            @include mixins.mobile{
+
+            @include mixins.md {
                 font-size: 36px;
             }
         }
@@ -21,15 +25,18 @@
             flex-wrap: wrap;
             margin-bottom: 70px;
             margin-top: 70px;
+
             .client__logo {
                 padding: 10px 5px;
+
                 img {
                     width: 100%;
                     height: 97px;
                     object-fit: cover;
                 }
             }
-            @include mixins.mobile {
+
+            @include mixins.md {
                 display: flex;
                 justify-content: center;
             }

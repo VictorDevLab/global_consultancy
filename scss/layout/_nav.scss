@@ -1,29 +1,33 @@
-@use '../../abstracts/mixins';
-@use '../../abstracts/variables' as var;
-@use '../../abstracts/functions' as func;
+@use '../abstracts/mixins';
+@use '../abstracts/variables'as var;
+@use '../base/classes';
+
 
 nav {
     background-color: var.$secondary-color;
-.navbar {
-        @include mixins.flexCenter();
+
+    .navbar {
         max-width: var.$max_width;
         margin: 0 auto;
         padding: 15px;
+
         .links {
             a:first-child {
                 color: var.$primary-color;
                 margin-right: 25px;
             }
+
             a {
                 text-decoration: none;
                 font-size: 16px;
                 color: var.$text-color;
                 font-family: var.$primary-font;
-                font-weight: func.weight(bold);
+                font-weight: 700;
+
                 &:hover {
                     color: var.$primary-color;
                 }
             }
         }
-    } 
+    }
 }

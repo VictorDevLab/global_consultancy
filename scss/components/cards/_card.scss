@@ -1,5 +1,5 @@
-@use '../abstracts/variables'as var;
-@use '../abstracts/mixins';
+@use '../../abstracts/variables'as var;
+@use '../../abstracts/mixins';
 
 %card {
     display: flex;
@@ -61,9 +61,10 @@
         margin-top: 0;
     }
 
-    @include mixins.mobile {
+    @include mixins.md {
         width: 280px;
         height: 190px;
+
         p {
             line-height: 1.6;
         }
@@ -76,30 +77,35 @@
     width: 325px;
     overflow: hidden;
     background-color: var.$secondary-color;
+
     img {
         width: 100%;
         object-fit: cover;
         height: 200px;
         // height: auto;
     }
+
     .card__content {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 16px;
+
         h4 {
-          font-size: 24px;
-          margin: 2px;
-          font-family: var.$primary-font;
-         
-          a {
-            text-decoration: none;
-            color: var.$text-color;
-          }
+            font-size: 24px;
+            margin: 2px;
+            font-family: var.$primary-font;
+
+            a {
+                text-decoration: none;
+                color: var.$text-color;
+            }
         }
+
         p {
             font-family: var.$secondary-font;
         }
+
         a {
             font-size: 18px;
             text-decoration: none;

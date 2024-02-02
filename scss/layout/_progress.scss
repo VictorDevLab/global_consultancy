@@ -1,6 +1,6 @@
-@use '../../abstracts/variables'as var;
-@use '../../components/box';
-@use '../../abstracts/mixins';
+@use '../abstracts/variables'as var;
+@use '../components/box';
+@use '../abstracts/mixins';
 
 .progress__container {
     display: flex;
@@ -17,7 +17,8 @@
             font-size: 48px;
             text-align: center;
             margin-top: 70px;
-            @include mixins.mobile {
+
+            @include mixins.md {
                 font-size: 36px;
             }
         }
@@ -31,15 +32,16 @@
                 display: flex;
                 width: 400px;
                 padding: 30px 20px;
-               
-                @include mixins.mobile {
+
+                @include mixins.md {
                     width: 95%;
                 }
+
                 .box1 {
                     @extend %box;
                     width: 50%;
                     background-color: #53627f;
-                   
+
                 }
 
                 .box2 {
@@ -64,10 +66,10 @@
                     font-family: var.$secondary-font;
                     margin-top: -4px;
                     line-height: 1.8;
-                   
+
                 }
 
-                @include mixins.mobile {
+                @include mixins.md {
                     display: flex;
                     flex-direction: column;
                     align-items: start;
@@ -79,14 +81,16 @@
     }
 
 }
-@include mixins.mobile{
-   .box {
-    width: 13% !important;
-    margin-bottom: 30px;
-   }                     
+
+@include mixins.md {
+    .box {
+        width: 13% !important;
+        margin-bottom: 30px;
+    }
 }
+
 .parent__blocks {
-    @include mixins.mobile {
+    @include mixins.md {
         display: flex;
         justify-content: center;
         align-items: center;

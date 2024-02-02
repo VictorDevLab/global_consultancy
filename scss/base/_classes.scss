@@ -1,0 +1,19 @@
+@use '../abstracts/mixins';
+
+.flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@include mixins.md() {
+    .flex-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}

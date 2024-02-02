@@ -1,5 +1,5 @@
 @use '../../abstracts/variables'as var;
-@use '../../components/offercard';
+@use '../../components/cards/offercard';
 @use '../../abstracts/mixins';
 
 .offers {
@@ -10,7 +10,7 @@
         font-weight: 700;
         margin-top: 60px;
 
-        @include mixins.mobile {
+        @include mixins.md {
             font-size: 36px;
         }
     }
@@ -22,7 +22,7 @@
         margin: 0 auto;
         gap: 30px;
 
-        @include mixins.mobile {
+        @include mixins.md {
             flex-direction: column;
             text-align: center
         }
@@ -32,7 +32,7 @@
             @extend %innovation;
             margin-top: 200px;
 
-            @include mixins.mobile {
+            @include mixins.md {
                 margin-top: 20px;
             }
         }
@@ -46,7 +46,7 @@
 
             @extend %innovation;
 
-            @include mixins.mobile {
+            @include mixins.md {
                 margin-top: 20px;
             }
 

@@ -1,15 +1,18 @@
-@use '../../abstracts/variables' as var;
-@use '../../abstracts/mixins';
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
+@use '../base/classes';
+
 .info {
-    background-image: url('../assets/background_two.jpeg');
+    background-image: url('../assets/backgrounds/background_two.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include mixins.mobile {
+    @include mixins.md {
         background-position: 90% 70%;
     }
 }
+
 .info__cards {
     max-width: var.$max-width;
     display: flex;
@@ -19,8 +22,7 @@
     padding: 20px;
     margin: 0 auto;
 
-    @include mixins.mobile {
-        @include mixins.flexMobile();
+    @include mixins.md {
         align-items: center;
     }
 }

@@ -1,6 +1,6 @@
-@use '../../components/card';
-@use '../../abstracts/variables'as var;
-@use '../../abstracts/mixins';
+@use '../components/cards/card';
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
 
 .services__container {
     .services {
@@ -20,7 +20,7 @@
                 font-family: var.$secondary-font;
             }
 
-            @include mixins.mobile {
+            @include mixins.md {
                 h2 {
                     font-size: 2.25rem;
                 }
@@ -28,7 +28,7 @@
         }
 
         .right__services {
-           
+
             .cards {
                 display: flex;
                 color: var.$secondary-color;
@@ -52,7 +52,8 @@
                 }
             }
 
-            @include mixins.mobile {
+            @include mixins.md {
+
                 // padding-left: 20px;
                 .cards {
                     display: flex;

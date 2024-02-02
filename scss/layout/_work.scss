@@ -1,27 +1,33 @@
-@use '../../abstracts/variables' as var;
-@use '../../abstracts/mixins';
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
+
 .work {
     display: flex;
-        justify-content: center;
+    justify-content: center;
+
     .work__container {
         display: flex;
         justify-content: space-between;
         max-width: var.$max-width;
         padding: 20px 50px;
+
         .work__left {
             padding-top: 70px;
             display: flex;
             justify-content: center;
-          img {
-            width: 500px;
-            object-fit: cover;
-            @include mixins.mobile {
-                width: 320px;
-                height: 351px;
+
+            img {
+                width: 500px;
                 object-fit: cover;
+
+                @include mixins.md {
+                    width: 320px;
+                    height: 351px;
+                    object-fit: cover;
+                }
             }
-          }
         }
+
         .work__right {
             padding: 30px 40px;
 
@@ -30,26 +36,32 @@
                 font-weight: 300;
                 font-size: 18px;
             }
+
             h2 {
                 font-family: var.$primary-font;
                 font-size: 48px;
             }
+
             p {
                 font-family: var.$secondary-font;
                 line-height: 1.8;
                 font-size: 16px;
             }
+
             hr {
                 margin-top: 20px;
             }
+
             .quotee {
                 margin-top: 50px;
                 display: flex;
                 justify-content: flex-start;
+
                 img {
                     width: 50px;
                     height: 50px;
                 }
+
                 p {
                     margin-top: 0;
                     margin-left: 20px;
@@ -57,20 +69,22 @@
                     line-height: 1.8;
                 }
             }
+
             h5 {
                 font-family: var.$primary-font;
                 font-weight: 300;
-                font-size: 18px; 
+                font-size: 18px;
                 margin-left: 65px;
             }
-            @include mixins.mobile {
+
+            @include mixins.md {
                 padding: 10px;
             }
         }
-        @include mixins.mobile {
+
+        @include mixins.md {
             flex-direction: column;
             padding: 10px;
         }
     }
 }
-

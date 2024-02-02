@@ -1,5 +1,5 @@
-@use '../../abstracts/variables'as var;
-@use '../../abstracts/mixins';
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
 
 .about__parent {
     margin-top: 60px;
@@ -13,7 +13,7 @@
             height: 243px;
             object-fit: cover;
 
-            @include mixins.mobile {
+            @include mixins.md {
                 width: 340px;
                 height: 98px;
             }
@@ -29,7 +29,7 @@
             &.about1 {
                 padding: 30px 30px 30px 0;
 
-                @include mixins.mobile {
+                @include mixins.md {
                     padding: 30px;
                 }
             }
@@ -37,7 +37,7 @@
             &.about2 {
                 padding: 100px 30px 14px;
 
-                @include mixins.mobile {
+                @include mixins.md {
                     padding: 30px;
                 }
             }
@@ -45,7 +45,7 @@
             &.about3 {
                 padding: 100px 0 14px 30px;
 
-                @include mixins.mobile {
+                @include mixins.md {
                     padding: 30px;
                 }
             }
@@ -62,7 +62,7 @@
             }
         }
 
-        @include mixins.mobile {
+        @include mixins.md {
             display: flex;
             flex-direction: column;
         }
@@ -79,7 +79,7 @@
             height: 243px;
             object-fit: cover;
 
-            @include mixins.mobile {
+            @include mixins.md {
                 width: 340px;
                 height: 98px;
             }

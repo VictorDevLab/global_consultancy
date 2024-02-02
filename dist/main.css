@@ -1,12 +1,25 @@
 /* Styles for screens between 768px and 1023px wide (tablets) */
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .flex-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
 nav {
   background-color: #ffffff;
 }
 nav .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
   max-width: 1024px;
   margin: 0 auto;
   padding: 15px;
@@ -72,8 +85,6 @@ button:hover {
   overflow-y: hidden;
 }
 .hero .hero__section {
-  display: flex;
-  justify-content: space-between;
   max-width: 1024px;
   margin: 0 auto;
   min-height: 691px;
@@ -130,10 +141,6 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
-  .hero .hero__section {
-    display: flex;
-    flex-direction: column;
-  }
   .hero .hero__section .hero__left h1 {
     font-size: 48px;
   }
@@ -288,7 +295,7 @@ button:hover {
 }
 
 .info {
-  background-image: url("../assets/background_two.jpeg");
+  background-image: url("../assets/backgrounds/background_two.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -310,8 +317,6 @@ button:hover {
 }
 @media (max-width: 768px) {
   .info__cards {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 }
@@ -598,7 +603,7 @@ button:hover {
 }
 
 .coaching {
-  background: linear-gradient(0deg, rgba(41, 44, 51, 0.7), rgba(41, 44, 51, 0.7)), url("../assets/backgroungoffice.jpeg");
+  background: linear-gradient(0deg, rgba(41, 44, 51, 0.7), rgba(41, 44, 51, 0.7)), url("../assets/backgrounds/backgroungoffice.jpeg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -794,9 +799,12 @@ button:hover {
   font: 36px "Open Sans", sans-serif;
   margin-bottom: 40px;
   font-weight: 700;
-  color: #1a1a1a; /* Adjust the color as needed */
-  text-align: center; /* Center the heading */
-  text-transform: uppercase; /* Convert text to uppercase */
+  color: #1a1a1a;
+  /* Adjust the color as needed */
+  text-align: center;
+  /* Center the heading */
+  text-transform: uppercase;
+  /* Convert text to uppercase */
 }
 .contact .form-container {
   max-width: 600px;

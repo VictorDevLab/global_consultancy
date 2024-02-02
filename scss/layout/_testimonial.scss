@@ -1,5 +1,5 @@
-@use '../../abstracts/variables'as var;
-@use '../../abstracts/mixins';
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
 
 
 .testimonial {
@@ -14,9 +14,9 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-        
 
-        @include mixins.mobile {
+
+        @include mixins.md {
             flex-direction: column;
             gap: 1px;
         }
@@ -31,7 +31,7 @@
             flex-direction: column;
             align-items: center;
 
-            @include mixins.mobile {
+            @include mixins.md {
                 width: 330px;
                 padding: 10px 10px;
             }
@@ -58,7 +58,7 @@
             h6 {
                 font: 20px var.$primary-font;
                 margin: 0;
-                
+
             }
 
             h5 {

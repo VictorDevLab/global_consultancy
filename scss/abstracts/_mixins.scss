@@ -1,28 +1,13 @@
-@mixin flexCenter($direction: row) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: $direction;
-}
-
-@mixin flexContainer() {
-    display: flex;
-    justify-content: space-between;
-}
-
-@mixin mobile() {
+@mixin md() {
     @media (max-width: 768px) {
         @content;
     }
 }
-@mixin flexMobile() {
-    display: flex;
-    flex-direction: column;
-}
- /* Styles for screens between 768px and 1023px wide (tablets) */
-@mixin flexTablet() {
+
+/* Styles for screens between 768px and 1023px wide (tablets) */
+@mixin lg() {
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         @content;
-      }
-      
+    }
+
 }

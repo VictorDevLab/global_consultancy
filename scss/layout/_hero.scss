@@ -1,7 +1,7 @@
-@use '../../abstracts/variables'as var;
-@use '../../abstracts/mixins';
-@use '../../abstracts/functions'as func;
-@use '../../components/buttons';
+@use '../abstracts/variables'as var;
+@use '../abstracts/mixins';
+@use '../components/buttons';
+@use '../base/classes';
 
 
 .hero {
@@ -10,7 +10,6 @@
     overflow-y: hidden;
 
     .hero__section {
-        @include mixins.flexContainer();
         max-width: var.$max_width;
         margin: 0 auto;
         min-height: 691px;
@@ -29,10 +28,10 @@
             h1 {
                 font-family: var.$primary-font;
                 font-size: 5.625rem;
-                font-weight: func.weight(bold);
+                font-weight: 700;
                 margin-top: 23px;
 
-                @include mixins.flexTablet {
+                @include mixins.lg {
                     font-size: 3.625rem;
                 }
             }
@@ -40,7 +39,7 @@
             p {
                 font-family: var.$secondary-font;
                 font-size: var.$font-size;
-                font-weight: func.weight(regular);
+                font-weight: 400;
                 margin-top: 13px;
                 margin-bottom: 13px;
                 line-height: 29px;
@@ -50,7 +49,7 @@
                 margin-top: 35px;
                 display: block;
                 color: var.$text-color;
-                font-weight: func.weight(regular);
+                font-weight: 400;
                 font-family: var.$primary-font;
                 font-style: italic;
             }
@@ -66,14 +65,13 @@
                 height: 100%;
                 object-fit: cover;
 
-                @include mixins.flexTablet {
+                @include mixins.lg {
                     min-width: 100%;
                 }
             }
         }
 
-        @include mixins.mobile {
-            @include mixins.flexMobile();
+        @include mixins.md {
 
             .hero__left {
                 h1 {
@@ -89,7 +87,7 @@
             }
         }
 
-        @include mixins.flexTablet {
+        @include mixins.lg {
             height: 500px;
         }
 
