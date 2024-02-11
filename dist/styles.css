@@ -1,0 +1,246 @@
+/* Styles for screens between 768px and 1023px wide (tablets) */
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .flex-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav {
+  background-color: #ffffff;
+}
+nav .navbar {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px;
+}
+nav .navbar .links a:first-child {
+  color: #f2795a;
+  margin-right: 25px;
+}
+nav .navbar .links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1a1a1a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+nav .navbar .links a:hover {
+  color: #f2795a;
+}
+
+button {
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  color: #ffffff;
+  align-self: center;
+  text-transform: uppercase;
+  background-color: #000000;
+  font-weight: 400;
+  border: none;
+  margin: 45px auto 0 0;
+  border-radius: 50px;
+  padding: 19px 63px 19px 62px;
+  transition: background-color 0.1s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f2795a;
+}
+
+.learn_more {
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  color: #1a1a1a;
+  align-self: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: 400;
+  margin: 15px auto 0 0;
+  border-radius: 50px;
+  padding: 15px 30px 15px 30px;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border: 2px #bbae9d solid;
+}
+.learn_more:hover {
+  background-color: #f2795a;
+  color: #ffffff;
+  border-color: #f2795a;
+}
+
+.hero {
+  background-color: #eceaea;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.hero .hero__section {
+  max-width: 1024px;
+  margin: 0 auto;
+  min-height: 691px;
+}
+.hero .hero__section .hero__left {
+  padding: 30px 40px;
+}
+.hero .hero__section .hero__left .circle {
+  height: 70px;
+  width: 70px;
+  background-color: #f2795a;
+  border-radius: 50%;
+  margin-top: 26px;
+}
+.hero .hero__section .hero__left h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 5.625rem;
+  font-weight: 700;
+  margin-top: 23px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero .hero__section .hero__left h1 {
+    font-size: 3.625rem;
+  }
+}
+.hero .hero__section .hero__left p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  line-height: 29px;
+}
+.hero .hero__section .hero__left a {
+  margin-top: 35px;
+  display: block;
+  color: #1a1a1a;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+.hero .hero__section .hero__left button {
+  margin-top: 45px;
+}
+.hero .hero__section .hero__right img {
+  width: 160%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero .hero__section .hero__right img {
+    min-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero__section .hero__left h1 {
+    font-size: 48px;
+  }
+  .hero .hero__section .hero__right img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero .hero__section {
+    height: 500px;
+  }
+}
+
+.site__footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.offers .offers__container .card1, .offers .offers__container .card2, .offers .offers__container .card3 {
+  padding: 30px 22px;
+}
+.offers .offers__container .card1 .icons__container, .offers .offers__container .card2 .icons__container, .offers .offers__container .card3 .icons__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .offers .offers__container .card1 .icons__container, .offers .offers__container .card2 .icons__container, .offers .offers__container .card3 .icons__container {
+    flex-direction: column;
+  }
+}
+.offers .offers__container .card1 .icons__container div, .offers .offers__container .card2 .icons__container div, .offers .offers__container .card3 .icons__container div {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f2795a;
+}
+.offers .offers__container .card1 .icons__container div img, .offers .offers__container .card2 .icons__container div img, .offers .offers__container .card3 .icons__container div img {
+  width: 30px;
+  height: 30px;
+}
+.offers .offers__container .card1 .icons__container h4, .offers .offers__container .card2 .icons__container h4, .offers .offers__container .card3 .icons__container h4 {
+  margin-left: 18px;
+  font: 24px "Roboto", sans-serif;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .offers .offers__container .card1 .icons__container h4, .offers .offers__container .card2 .icons__container h4, .offers .offers__container .card3 .icons__container h4 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+.offers .offers__container .card1 .innovation__content, .offers .offers__container .card2 .innovation__content, .offers .offers__container .card3 .innovation__content {
+  font: 16px "Open Sans", sans-serif;
+  line-height: 1.8;
+}
+
+.offers h2 {
+  text-align: center;
+  font: 48px "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  .offers h2 {
+    font-size: 36px;
+  }
+}
+.offers .offers__container {
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .offers .offers__container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.offers .offers__container .card1 {
+  margin-top: 200px;
+}
+@media (max-width: 768px) {
+  .offers .offers__container .card1 {
+    margin-top: 20px;
+  }
+}
+.offers .offers__container .card3 {
+  margin-top: 230px;
+}
+@media (max-width: 768px) {
+  .offers .offers__container .card3 {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */

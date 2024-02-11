@@ -295,7 +295,7 @@ button:hover {
 }
 
 .info {
-  background-image: url("../assets/backgrounds/background_two.jpeg");
+  background-image: url("../assets/backgrounds/woman_coffee_background.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -603,7 +603,7 @@ button:hover {
 }
 
 .coaching {
-  background: linear-gradient(0deg, rgba(41, 44, 51, 0.7), rgba(41, 44, 51, 0.7)), url("../assets/backgrounds/backgroungoffice.jpeg");
+  background: linear-gradient(0deg, rgba(41, 44, 51, 0.7), rgba(41, 44, 51, 0.7)), url("../assets/backgrounds/office_background.jpeg");
   display: flex;
   justify-content: center;
   align-items: center;
